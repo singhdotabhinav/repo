@@ -5,7 +5,7 @@ def main():
     st.title("Abhinav Kumar's Portfolio")
 
     st.header("Work Experience - Cimpress India Pvt. Ltd.")
-    st.write("Software Developer | Bangalore, India | Aug 2021 - Present")
+    st.write("Software Developer     |     Bangalore, India     |     Aug 2021 - Present")
     st.markdown("• Orchestrated the migration of data storage to AWS S3, optimising data retrieval time by 40% and enhancing scalability for the company's growing customer base.")
     st.markdown("• Implemented AWS Step Functions to streamline and automate complex workflows, reducing processing time by 50% and improving overall system efficiency.")
     st.markdown("• Experience in deploying Fargate and EC2 tasks from Docker containers, showcasing the ability to manage containerized applications efficiently, whether through serverless container orchestration (Fargate) or traditional virtual machines.")
