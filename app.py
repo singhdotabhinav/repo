@@ -2,9 +2,9 @@ import time
 import streamlit as st
 
 def main():
-   dark_mode = st.sidebar.checkbox("Dark Mode")
-   if dark_mode:
-     dark_css = """
+    dark_mode = st.sidebar.checkbox("Dark Mode")
+    if dark_mode:
+        dark_css = """
               <style>
                   body {
                       background-color: #1e1e1e;
@@ -15,7 +15,7 @@ def main():
                   }
               </style>
               """
-            st.markdown(dark_css, unsafe_allow_html=True)
+        st.markdown(dark_css, unsafe_allow_html=True)
     else:
         light_css = """
         <style>
@@ -28,11 +28,11 @@ def main():
             }
         </style>
         """
-     st.markdown(light_css, unsafe_allow_html=True)
-     st.title(" Abhinav Kumar's Portfolio")
-     st.header(" Cimpress India Pvt. Ltd.")
-     st.write("Software Developer     |     Bangalore, India     |     Aug 2021 - Present")
-     with st.beta_expander(" Work Experience @Cimpress"):
+    st.markdown(light_css, unsafe_allow_html=True)
+    st.title(" Abhinav Kumar's Portfolio")
+    st.header(" Cimpress India Pvt. Ltd.")
+    st.write("Software Developer     |     Bangalore, India     |     Aug 2021 - Present")
+    with st.beta_expander(" Work Experience @Cimpress"):
         
         st.markdown("• Orchestrated the migration of data storage to AWS S3, optimising data retrieval time by 40% and enhancing scalability for the company's growing customer base.")
         st.markdown("• Implemented AWS Step Functions to streamline and automate complex workflows, reducing processing time by 50% and improving overall system efficiency.")
@@ -108,34 +108,3 @@ def main():
                     progress_bar.progress(i)
                 progress_bar.progress(proficiency)
 
-
-    # for skill, proficiency in skills.items():
-    #     st.write(f"{skill}:")
-    #     progress_bar = st.progress(0)
-    #     for i in range(101):
-    #         time.sleep(0.02)  # Adjust the speed of the animation
-    #         progress_bar.progress(i)
-    #     progress_bar.progress(proficiency)
-     
-    # st.header("Skills")
-    # with st.beta_expander(""):
-    #     # st.header("Skills")
-    #     st.markdown("• Python ")
-    #     st.markdown("• AWS (Step-Functions, S3, Lambda, EC2, Fargate, DynamoDB)")
-    #     st.markdown("• Serverless Computing")
-    #     st.markdown("• CI/CD")
-    #     st.markdown("• Snowflake")
-    #     st.markdown("• Docker")
-    #     st.markdown("• Pytest")
-    #     st.markdown('''
-    #         <style>
-    #         [data-testid="stMarkdownContainer"] ul{
-    #             padding-left:40px;
-    #         }
-    #         </style>
-    #         ''', unsafe_allow_html=True)
-
-
-
-if __name__ == "__main__":
-    main()
