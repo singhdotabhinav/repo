@@ -31,17 +31,20 @@ def main():
     
     
     st.header("Education - Siddaganga Institute of Technology")
-    st.write("Computer Science and Engineering")
+    st.write("Computer Science and Engineering - Graduation Date: Aug 2021")
+    st.write("CGPA - 8.4")
+    
+    
 
     # Expander to reveal/hide project details
-    with st.beta_expander("Project Experience - NoChinano.com"):
+    st.write("Project Experience")
+    with st.beta_expander(" Ecommerce-Webapp"):
         st.write(
-            "Co-Founder and Developer | Tumakuru, India<br>"
-            "Graduation Date: Aug 2021<br>"
-            "Inspired by India's endeavors to boycott Chinese brands, developed a website...<br>"
-            "• More than 1k active users<br>"
-            "• Fetching real-time data from Firebase for products and Amazon API for price updates..."
-            # (Include all other project details)
+            "nspired by India's endeavours to help India boycott Chinese brands. An effective boycott would be easier if we are aware of existing alternatives to Chinese products. To solve this problem, I have come up with a website, which will help people to buy electronic goods with better ratings. We have more than 1k active users, fetching real-time data from firebase for the products and Amazon API for updating the price of the product."
+        )
+    with st.beta_expander(" Emotion detection using Artificial Intelligence"):
+        st.write(
+            "Developed this project to detect the current emotion of humans and to recommend some videos to watch in order to make their mood better. For example, if a person is sad, he will be made to watch some motivational videos. The project was designed using Python and Deep Learning using Flask Framework."
         )
 
     st.header("Skills")
