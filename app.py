@@ -71,7 +71,11 @@ def main():
 
     for skill, proficiency in skills.items():
         st.write(f"{skill}:")
-        st.progress(proficiency / 100.0)
+        progress_bar = st.progress(0)
+        for i in range(101):
+            time.sleep(0.02)  # Adjust the speed of the animation
+            progress_bar.progress(i)
+        progress_bar.progress(proficiency)
     # st.header("Skills")
     # with st.beta_expander(""):
     #     # st.header("Skills")
