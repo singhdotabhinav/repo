@@ -54,7 +54,7 @@ def main():
     st.header("Project Experience")
     with st.beta_expander(" Ecommerce-Webapp"):
         st.write(
-            "Inspired by India's endeavours to help India boycott Chinese brands. An effective boycott would be easier if we are aware of existing alternatives to Chinese products. To solve this problem, I have come up with a website, which will help people to buy electronic goods with better ratings. We have more than 1k active users, fetching real-time data from firebase for the products and Amazon API for updating the price of the product."
+            "Inspired by India's endeavours to help India promote indigenous brands. To solve this problem, I have come up with a website, which will help people to buy electronic goods with better ratings. We have more than 1k active users, fetching real-time data from firebase for the products and Amazon API for updating the price of the product."
         )
     with st.beta_expander(" Emotion detection using Artificial Intelligence"):
         st.write(
