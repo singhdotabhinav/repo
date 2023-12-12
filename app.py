@@ -77,7 +77,7 @@ def main():
                 st.write(f"{skill}:")
                 progress_bar = st.progress(0)
                 for i in range(101):
-                    time.sleep(0.02)  # Adjust the speed of the animation
+                    time.sleep(0.009)  # Adjust the speed of the animation
                     progress_bar.progress(i)
                 progress_bar.progress(proficiency)
 
