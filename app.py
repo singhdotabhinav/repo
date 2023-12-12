@@ -23,7 +23,7 @@ def main():
         st.markdown(theme_config_dark, unsafe_allow_html=True)
     else:
         st.markdown(theme_config_light, unsafe_allow_html=True)
-    st.markdown(light_css, unsafe_allow_html=True)
+    # st.markdown(light_css, unsafe_allow_html=True)
     st.title(" Abhinav Kumar's Portfolio")
     st.header(" Cimpress India Pvt. Ltd.")
     st.write("Software Developer     |     Bangalore, India     |     Aug 2021 - Present")
