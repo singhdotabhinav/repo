@@ -5,19 +5,11 @@ def main():
     dark_mode = st.sidebar.checkbox("Dark Mode")
     theme_config_light = """
     [theme]
-    primaryColor="#F63366"
-    backgroundColor="#FFFFFF"
-    secondaryBackgroundColor="#F0F2F6"
-    textColor="#262730"
-    font="sans serif"
+    base="light"
     """
     theme_config_dark = """
     [theme]
-    primaryColor="#F63366"
-    backgroundColor="#1e1e1e"
-    secondaryBackgroundColor="#313335"
-    textColor="#FFFFFF"
-    font="sans serif"
+    base="dark"
     """
     if dark_mode:
         st.markdown(theme_config_dark, unsafe_allow_html=True)
