@@ -2,19 +2,19 @@ import time
 import streamlit as st
 
 def main():
-    dark_mode = st.sidebar.checkbox("Dark Mode")
-    theme_config_light = """
-    [theme]
-    base="light"
-    """
-    theme_config_dark = """
-    [theme]
-    base="dark"
-    """
-    if dark_mode:
-        st.markdown(theme_config_dark, unsafe_allow_html=True)
-    else:
-        st.markdown(theme_config_light, unsafe_allow_html=True)
+    # dark_mode = st.sidebar.checkbox("Dark Mode")
+    # theme_config_light = """
+    # [theme]
+    # base="light"
+    # """
+    # theme_config_dark = """
+    # [theme]
+    # base="dark"
+    # """
+    # if dark_mode:
+    #     st.markdown(theme_config_dark, unsafe_allow_html=True)
+    # else:
+    #     st.markdown(theme_config_light, unsafe_allow_html=True)
     # st.markdown(light_css, unsafe_allow_html=True)
     st.title(" Abhinav Kumar's Portfolio")
     st.header(" Cimpress India Pvt. Ltd.")
