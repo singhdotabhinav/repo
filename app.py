@@ -31,8 +31,7 @@ def main():
     
     
     st.header("Education - Siddaganga Institute of Technology")
-    st.write("Computer Science and Engineering - Graduation Date: Aug 2021")
-    st.write("CGPA - 8.4")
+    st.write("Computer Science and Engineering - Graduation Date: Aug 2021 | CGPA - 8.4")
     
     
 
