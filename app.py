@@ -5,29 +5,29 @@ def main():
    dark_mode = st.sidebar.checkbox("Dark Mode")
    if dark_mode:
      dark_css = """
-     <style>
-         body {
-             background-color: #1e1e1e;
-             color: white;
-         }
-         .css-1v5rtts {
-             color: white;
-         }
-     </style>
-     """
-     st.markdown(dark_css, unsafe_allow_html=True)
- else:
-     light_css = """
-     <style>
-         body {
-             background-color: white;
-             color: black;
-         }
-         .css-1v5rtts {
-             color: black;
-         }
-     </style>
-     """
+              <style>
+                  body {
+                      background-color: #1e1e1e;
+                      color: white;
+                  }
+                  .css-1v5rtts {
+                      color: white;
+                  }
+              </style>
+              """
+            st.markdown(dark_css, unsafe_allow_html=True)
+    else:
+        light_css = """
+        <style>
+            body {
+                background-color: white;
+                color: black;
+            }
+            .css-1v5rtts {
+                color: black;
+            }
+        </style>
+        """
      st.markdown(light_css, unsafe_allow_html=True)
      st.title(" Abhinav Kumar's Portfolio")
      st.header(" Cimpress India Pvt. Ltd.")
