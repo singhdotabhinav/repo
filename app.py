@@ -6,6 +6,8 @@ def main():
 
     st.header("Work Experience - Cimpress India Pvt. Ltd.")
     st.write("Software Developer | Bangalore, India | Aug 2021 - Present")
+    st.markdown("- Item 1")
+    st.markdown("• Orchestrated the migration of data storage to AWS S3, optimising")
     st.write("• Orchestrated the migration of data storage to AWS S3, optimising data retrieval time by 40% and enhancing scalability for the company's growing customer base.")
     st.write("• Implemented AWS Step Functions to streamline workflows, reducing processing time by 50%")
     st.write("• Experience in deploying Fargate and EC2 tasks from Docker containers")
