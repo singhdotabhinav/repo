@@ -5,14 +5,10 @@ def main():
     st.title("Abhinav Kumar's Portfolio")
 
     st.header("Work Experience - Cimpress India Pvt. Ltd.")
-    st.write(
-        "Software Developer | Bangalore, India | Aug 2021 - Present<br>"
-        "• Orchestrated migration to AWS S3, optimizing data retrieval time by 40%...<br>"
-        "• Implemented AWS Step Functions to streamline workflows, reducing processing time by 50%...<br>"
-        "• Experience in deploying Fargate and EC2 tasks from Docker containers..."
-        # (Include all other work experience details)
-    )
-
+    st.write("Software Developer | Bangalore, India | Aug 2021 - Present")
+    st.write("• Orchestrated migration to AWS S3, optimizing data retrieval time by 40%...")
+    st.write("• Implemented AWS Step Functions to streamline workflows, reducing processing time by 50%")
+    st.write("• Experience in deploying Fargate and EC2 tasks from Docker containers")
     st.header("Education - Siddaganga Institute of Technology")
     st.write("Computer Science and Engineering")
 
