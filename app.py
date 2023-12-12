@@ -1,4 +1,4 @@
-# portfolio_app.py
+import time
 import streamlit as st
 
 def main():
