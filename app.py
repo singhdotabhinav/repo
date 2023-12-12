@@ -107,4 +107,6 @@ def main():
                     time.sleep(0.009)  # Adjust the speed of the animation
                     progress_bar.progress(i)
                 progress_bar.progress(proficiency)
+if __name__ == "__main__":
+    main()
 
