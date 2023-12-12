@@ -37,7 +37,7 @@ def main():
     
 
     # Expander to reveal/hide project details
-    st.write("Project Experience")
+    st.header("Project Experience")
     with st.beta_expander(" Ecommerce-Webapp"):
         st.write(
             "Inspired by India's endeavours to help India boycott Chinese brands. An effective boycott would be easier if we are aware of existing alternatives to Chinese products. To solve this problem, I have come up with a website, which will help people to buy electronic goods with better ratings. We have more than 1k active users, fetching real-time data from firebase for the products and Amazon API for updating the price of the product."
