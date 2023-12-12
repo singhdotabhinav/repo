@@ -3,21 +3,18 @@ import streamlit as st
 
 def main():
     dark_mode = st.sidebar.checkbox("Dark Mode")
-    if dark_mode:
-        dark_css = """
-              <style>
-                  body {
-                      background-color: #1e1e1e;
-                      color: white;
-                  }
-                  .css-1v5rtts {
-                      color: white;
-                  }
-              </style>
-              """
-        st.markdown(dark_css, unsafe_allow_html=True)
-    else:
-        light_css = """
+    dark_css = """
+        <style>
+            body {
+                background-color: #1e1e1e;
+                color: white;
+            }
+            .css-1v5rtts {
+                color: white;
+            }
+        </style>
+        """
+    light_css = """
         <style>
             body {
                 background-color: white;
@@ -28,6 +25,10 @@ def main():
             }
         </style>
         """
+    if dark_mode:
+        st.markdown(dark_css, unsafe_allow_html=True)
+    else:
+        st.markdown(light_css, unsafe_allow_html=True)
     st.markdown(light_css, unsafe_allow_html=True)
     st.title(" Abhinav Kumar's Portfolio")
     st.header(" Cimpress India Pvt. Ltd.")
