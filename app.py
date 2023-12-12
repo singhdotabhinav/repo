@@ -54,23 +54,43 @@ def main():
         st.write(
             "Developed a website that allowed the students of SIT to buy and sell used items. They can click the pictures of the product they want to sell and others can buy it, with flexible negotiations."
         )
+
     st.header("Skills")
-    with st.beta_expander(""):
-        # st.header("Skills")
-        st.markdown("• Python ")
-        st.markdown("• AWS (Step-Functions, S3, Lambda, EC2, Fargate, DynamoDB)")
-        st.markdown("• Serverless Computing")
-        st.markdown("• CI/CD")
-        st.markdown("• Snowflake")
-        st.markdown("• Docker")
-        st.markdown("• Pytest")
-        st.markdown('''
-            <style>
-            [data-testid="stMarkdownContainer"] ul{
-                padding-left:40px;
-            }
-            </style>
-            ''', unsafe_allow_html=True)
+
+    # Define proficiency levels for each skill
+    skills = {
+        "Python": 90,
+        "AWS": 80,
+        "Serverless Computing": 75,
+        "CI/CD": 85,
+        "Snowflake": 70,
+        "Docker": 90,
+        "Pytest": 80
+    }
+
+
+    for skill, proficiency in skills.items():
+        st.write(f"{skill}:")
+        st.progress(proficiency / 100.0)
+    # st.header("Skills")
+    # with st.beta_expander(""):
+    #     # st.header("Skills")
+    #     st.markdown("• Python ")
+    #     st.markdown("• AWS (Step-Functions, S3, Lambda, EC2, Fargate, DynamoDB)")
+    #     st.markdown("• Serverless Computing")
+    #     st.markdown("• CI/CD")
+    #     st.markdown("• Snowflake")
+    #     st.markdown("• Docker")
+    #     st.markdown("• Pytest")
+    #     st.markdown('''
+    #         <style>
+    #         [data-testid="stMarkdownContainer"] ul{
+    #             padding-left:40px;
+    #         }
+    #         </style>
+    #         ''', unsafe_allow_html=True)
+
+
 
 if __name__ == "__main__":
     main()
