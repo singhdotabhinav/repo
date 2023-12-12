@@ -3,40 +3,37 @@ import streamlit as st
 
 def main():
    dark_mode = st.sidebar.checkbox("Dark Mode")
-
-    # Apply custom CSS based on the toggle state
-    if dark_mode:
-        dark_css = """
-        <style>
-            body {
-                background-color: #1e1e1e;
-                color: white;
-            }
-            .css-1v5rtts {
-                color: white;
-            }
-        </style>
-        """
-        st.markdown(dark_css, unsafe_allow_html=True)
-    else:
-        light_css = """
-        <style>
-            body {
-                background-color: white;
-                color: black;
-            }
-            .css-1v5rtts {
-                color: black;
-            }
-        </style>
-        """
-        st.markdown(light_css, unsafe_allow_html=True)
-
-    st.title(" Abhinav Kumar's Portfolio")
-
-    st.header(" Cimpress India Pvt. Ltd.")
-    st.write("Software Developer     |     Bangalore, India     |     Aug 2021 - Present")
-    with st.beta_expander(" Work Experience @Cimpress"):
+   if dark_mode:
+     dark_css = """
+     <style>
+         body {
+             background-color: #1e1e1e;
+             color: white;
+         }
+         .css-1v5rtts {
+             color: white;
+         }
+     </style>
+     """
+     st.markdown(dark_css, unsafe_allow_html=True)
+ else:
+     light_css = """
+     <style>
+         body {
+             background-color: white;
+             color: black;
+         }
+         .css-1v5rtts {
+             color: black;
+         }
+     </style>
+     """
+     st.markdown(light_css, unsafe_allow_html=True)
+     st.title(" Abhinav Kumar's Portfolio")
+     st.header(" Cimpress India Pvt. Ltd.")
+     st.write("Software Developer     |     Bangalore, India     |     Aug 2021 - Present")
+     with st.beta_expander(" Work Experience @Cimpress"):
+        
         st.markdown("• Orchestrated the migration of data storage to AWS S3, optimising data retrieval time by 40% and enhancing scalability for the company's growing customer base.")
         st.markdown("• Implemented AWS Step Functions to streamline and automate complex workflows, reducing processing time by 50% and improving overall system efficiency.")
         st.markdown("• Experience in deploying Fargate and EC2 tasks from Docker containers, showcasing the ability to manage containerized applications efficiently, whether through serverless container orchestration (Fargate) or traditional virtual machines.")
