@@ -45,15 +45,20 @@ def main():
         )
 
     st.header("Skills")
-    st.write(
-        "• Python<br>"
-        "• AWS (Step-Functions, S3, Lambda, EC2, Fargate, DynamoDB)<br>"
-        "• Serverless Computing<br>"
-        "• CI/CD<br>"
-        "• Snowflake<br>"
-        "• Docker<br>"
-        "• Pytest"
-    )
+    st.markdown("• Python ")
+    st.markdown("• AWS (Step-Functions, S3, Lambda, EC2, Fargate, DynamoDB)")
+    st.markdown("• Serverless Computing")
+    st.markdown("• CI/CD")
+    st.markdown("• Snowflake")
+    st.markdown("• Docker")
+    st.markdown("• Pytest")
+    st.markdown('''
+        <style>
+        [data-testid="stMarkdownContainer"] ul{
+            padding-left:40px;
+        }
+        </style>
+        ''', unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
