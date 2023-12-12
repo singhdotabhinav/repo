@@ -54,22 +54,23 @@ def main():
         st.write(
             "Developed a website that allowed the students of SIT to buy and sell used items. They can click the pictures of the product they want to sell and others can buy it, with flexible negotiations."
         )
-
-    st.header("Skills")
-    st.markdown("• Python ")
-    st.markdown("• AWS (Step-Functions, S3, Lambda, EC2, Fargate, DynamoDB)")
-    st.markdown("• Serverless Computing")
-    st.markdown("• CI/CD")
-    st.markdown("• Snowflake")
-    st.markdown("• Docker")
-    st.markdown("• Pytest")
-    st.markdown('''
-        <style>
-        [data-testid="stMarkdownContainer"] ul{
-            padding-left:40px;
-        }
-        </style>
-        ''', unsafe_allow_html=True)
+    
+    with st.beta_expander(st.header("Skills")):
+        # st.header("Skills")
+        st.markdown("• Python ")
+        st.markdown("• AWS (Step-Functions, S3, Lambda, EC2, Fargate, DynamoDB)")
+        st.markdown("• Serverless Computing")
+        st.markdown("• CI/CD")
+        st.markdown("• Snowflake")
+        st.markdown("• Docker")
+        st.markdown("• Pytest")
+        st.markdown('''
+            <style>
+            [data-testid="stMarkdownContainer"] ul{
+                padding-left:40px;
+            }
+            </style>
+            ''', unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
