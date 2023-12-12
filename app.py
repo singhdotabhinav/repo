@@ -2,6 +2,13 @@ import time
 import streamlit as st
 
 def main():
+    dark_mode = st.sidebar.checkbox("Dark Mode")
+
+   
+    if dark_mode:
+        st.set_theme("dark")
+    else:
+        st.set_theme("light")
     st.title(" Abhinav Kumar's Portfolio")
 
     st.header(" Cimpress India Pvt. Ltd.")
