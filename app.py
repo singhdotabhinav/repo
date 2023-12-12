@@ -16,15 +16,19 @@ def main():
     st.header("Education - Siddaganga Institute of Technology")
     st.write("Computer Science and Engineering")
 
-    st.header("Project Experience - NoChinano.com")
-    st.write(
-        "Co-Founder and Developer | Tumakuru, India\n"
-        "Graduation Date: Aug 2021\n"
-        "Inspired by India's endeavors to boycott Chinese brands, developed a website...\n"
-        "• More than 1k active users\n"
-        "• Fetching real-time data from Firebase for products and Amazon API for price updates..."
-        # (Include all other project details)
-    )
+    # Button to reveal/hide project details
+    show_projects = st.button("Show Projects")
+
+    if show_projects:
+        st.header("Project Experience - NoChinano.com")
+        st.write(
+            "Co-Founder and Developer | Tumakuru, India\n"
+            "Graduation Date: Aug 2021\n"
+            "Inspired by India's endeavors to boycott Chinese brands, developed a website...\n"
+            "• More than 1k active users\n"
+            "• Fetching real-time data from Firebase for products and Amazon API for price updates..."
+            # (Include all other project details)
+        )
 
     st.header("Skills")
     st.write(
