@@ -20,6 +20,13 @@ def main():
     st.markdown("• In-Depth expertise in DynamoDB, including practical experience in implementing parallel scan techniques to optimise search operation, having proficiency in designing efficient and scalable NoSQL database solutions, particularly for large-scale data retrieval and analysis.")
     st.markdown("• Practical experience in developing and working with Flask APIs, demonstrating proficiency in building web applications and services using lightweight and flexible python framework.")
     st.markdown("• Engaged in Slack integration for applications, demonstrating the ability to seamlessly incorporate Slack functionality into software solutions, enabling efficient communication and collaboration within teams and applications.")
+    st.markdown('''
+        <style>
+        [data-testid="stMarkdownContainer"] ul{
+            padding-left:40px;
+        }
+        </style>
+        ''', unsafe_allow_html=True)
     
     
     
