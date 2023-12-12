@@ -54,7 +54,7 @@ def main():
         st.write(
             "Developed a website that allowed the students of SIT to buy and sell used items. They can click the pictures of the product they want to sell and others can buy it, with flexible negotiations."
         )
-    
+    st.header("Skills")
     with st.beta_expander("Skills"):
         # st.header("Skills")
         st.markdown("• Python ")
