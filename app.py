@@ -69,7 +69,7 @@ def main():
     }
     with st.beta_expander("Show Skills"):
         # Button to trigger the animation
-        animate_button = st.button("Animate Skills")
+        animate_button = True
 
         # Display skills with animated progress bars upon button click
         if animate_button:
