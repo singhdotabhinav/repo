@@ -67,15 +67,29 @@ def main():
         "Docker": 90,
         "Pytest": 80
     }
+    with st.beta_expander("Show Skills"):
+        # Button to trigger the animation
+        animate_button = st.button("Animate Skills")
+
+        # Display skills with animated progress bars upon button click
+        if animate_button:
+            for skill, proficiency in skills.items():
+                st.write(f"{skill}:")
+                progress_bar = st.progress(0)
+                for i in range(101):
+                    time.sleep(0.02)  # Adjust the speed of the animation
+                    progress_bar.progress(i)
+                progress_bar.progress(proficiency)
 
 
-    for skill, proficiency in skills.items():
-        st.write(f"{skill}:")
-        progress_bar = st.progress(0)
-        for i in range(101):
-            time.sleep(0.02)  # Adjust the speed of the animation
-            progress_bar.progress(i)
-        progress_bar.progress(proficiency)
+    # for skill, proficiency in skills.items():
+    #     st.write(f"{skill}:")
+    #     progress_bar = st.progress(0)
+    #     for i in range(101):
+    #         time.sleep(0.02)  # Adjust the speed of the animation
+    #         progress_bar.progress(i)
+    #     progress_bar.progress(proficiency)
+     
     # st.header("Skills")
     # with st.beta_expander(""):
     #     # st.header("Skills")
