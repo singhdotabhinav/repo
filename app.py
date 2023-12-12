@@ -16,11 +16,8 @@ def main():
     st.header("Education - Siddaganga Institute of Technology")
     st.write("Computer Science and Engineering")
 
-    # Button to reveal/hide project details
-    show_projects = st.button("Show Projects")
-
-    if show_projects:
-        st.header("Project Experience - NoChinano.com")
+    # Expander to reveal/hide project details
+    with st.beta_expander("Project Experience - NoChinano.com"):
         st.write(
             "Co-Founder and Developer | Tumakuru, India\n"
             "Graduation Date: Aug 2021\n"
