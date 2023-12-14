@@ -1,6 +1,6 @@
 import time
 import streamlit as st
-from streamlit_timeline import st_timeline
+# from streamlit_timeline import st_timeline
 
 def main():
     # dark_mode = st.sidebar.checkbox("Dark Mode")
@@ -95,40 +95,36 @@ def main():
                     time.sleep(0.009)  # Adjust the speed of the animation
                     progress_bar.progress(i)
                 progress_bar.progress(proficiency)
+    timeline()
 
 
     
+def timeline():
+    st.title("Your Resume Portfolio")
 
-    st.set_page_config(layout="wide")
+    # Sidebar for Vertical Timeline
+    st.sidebar.title("Timeline")
+    add_timeline_event("2015 - 2018", "Bachelor's Degree", "University of XYZ")
+    add_timeline_event("2018 - 2020", "Software Engineer", "Tech Company A")
+    add_timeline_event("2020 - Present", "Senior Software Engineer", "Tech Company B")
 
-    st.title("Test Plan")
+    # Main Content
+    st.write("## About Me")
+    st.write("Welcome to my resume portfolio! I am a passionate and experienced software engineer...")
+    
+    
+def add_timeline_event(date, title, description):
+    st.sidebar.text(date)
+    st.sidebar.text(title)
+    st.sidebar.text(description)
+    st.sidebar.markdown("---")
 
-    items = [
-        {"id": 1, "content": "Early shift", "start": "2022-10-17T08:00:00", "end": "2022-10-17T16:00:00", "group": "1"},
 
-        {"id": 2, "content": "Early shift", "start": "2022-10-17T11:00:00", "end": "2022-10-17T15:00:00", "group": "2"},
 
-        {"id": 3, "content": "Early shift", "start": "2022-10-17T10:00:00", "end": "2022-10-17T18:00:00", "group": "3"}
-    ]
 
-    groups = [
-        {"id": 1, "content": "Worker 1", "style": "color: black; background-color: #a9a9a98F;"},
-        {"id": 2, "content": "Worker 2", "style": "color: black; background-color: #a9a9a98F;"},
-        {"id": 3, "content": "Worker 3", "style": "color: black; background-color: #a9a9a98F;"}
-    ]
 
-    timeline = st_timeline(items, groups=groups, options={"selectable": True, 
-                                                        "multiselect": True, 
-                                                        "zoomable": True, 
-                                                        "verticalScroll": True, 
-                                                        "stack": False,
-                                                        "height": 200, 
-                                                        "margin": {"axis": 5}, 
-                                                        "groupHeightMode": "auto", 
-                                                        "orientation": {"axis": "top", "item": "top"}})
-
-    st.subheader("Selected item")
-    st.write(timeline)
 if __name__ == "__main__":
     main()
+   
+
 
